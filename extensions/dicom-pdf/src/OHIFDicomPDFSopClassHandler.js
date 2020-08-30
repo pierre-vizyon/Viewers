@@ -16,11 +16,12 @@ const OHIFDicomPDFSopClassHandler = {
       ContentDate,
       ContentTime,
       SeriesNumber,
+      SeriesDescription,
     } = instance._instance.metadata;
 
     return {
       plugin: 'pdf',
-      Modality: 'LIBI',
+      Modality: 'PDF',
       displaySetInstanceUID: utils.guid(),
       wadoRoot: study.getData().wadoRoot,
       wadoUri: instance.getData().wadouri,
@@ -30,6 +31,7 @@ const OHIFDicomPDFSopClassHandler = {
       SeriesDate: ContentDate, // Map ContentDate/Time to SeriesTime for series list sorting.
       SeriesTime: ContentTime,
       SeriesNumber,
+      SeriesDescription,
       authorizationHeaders: authorizationHeaders,
     };
   },
