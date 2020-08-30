@@ -20,7 +20,7 @@ const OHIFDicomPDFSopClassHandler = {
 
     return {
       plugin: 'pdf',
-      Modality: 'DOC',
+      Modality: 'LIBI',
       displaySetInstanceUID: utils.guid(),
       wadoRoot: study.getData().wadoRoot,
       wadoUri: instance.getData().wadouri,
