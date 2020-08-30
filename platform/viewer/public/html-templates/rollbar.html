@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="theme-color" content="#000000" />
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="OHIF Viewer">
+  <meta name="application-name" content="VIZYON Viewer">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- content @ohif/viewer à modif-->
+
   <meta name="apple-mobile-web-app-title" content="@ohif/viewer">
   <meta name="msapplication-TileColor" content="#fff">
   <meta name="msapplication-TileImage" content="<%= PUBLIC_URL %>assets/mstile-144x144.png">
@@ -66,7 +68,7 @@
   <!-- Targets IE11 -->
   <script
     src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=default%2CObject.values%2CArray.prototype.flat%2CObject.entries%2CSymbol%2CArray.prototype.includes%2CString.prototype.repeat%2CArray.prototype.find">
-  </script>
+    </script>
   <script type="text/javascript">
     window.PUBLIC_URL = '<%= PUBLIC_URL %>';
   </script>
@@ -138,9 +140,9 @@
         if (4 & e && "object" == typeof r && r && r.__esModule) return r;
         var n = Object.create(null);
         if (o.r(n), Object.defineProperty(n, "default", {
-            enumerable: !0,
-            value: r
-          }), 2 & e && "string" != typeof r)
+          enumerable: !0,
+          value: r
+        }), 2 & e && "string" != typeof r)
           for (var t in r) o.d(n, t, function (e) {
             return r[e]
           }.bind(null, t));
@@ -174,7 +176,7 @@
           } catch (r) {
             try {
               console.error("[Rollbar]: Internal error", r)
-            } catch (r) {}
+            } catch (r) { }
           }
         }
       }
@@ -221,7 +223,7 @@
               i.onload = i.onreadystatechange = null;
               try {
                 c.removeChild(i)
-              } catch (r) {}
+              } catch (r) { }
               l = !0,
                 function () {
                   var e;
@@ -243,19 +245,19 @@
         try {
           var n;
           if (n = "function" == typeof e ? e : function () {
-              return e || {}
-            }, "function" != typeof r) return r;
+            return e || {}
+          }, "function" != typeof r) return r;
           if (r._isWrap) return r;
           if (!r._rollbar_wrapped && (r._rollbar_wrapped = function () {
-              o && "function" == typeof o && o.apply(this, arguments);
-              try {
-                return r.apply(this, arguments)
-              } catch (o) {
-                var e = o;
-                throw e && ("string" == typeof e && (e = new String(e)), e._rollbarContext = n() || {}, e
-                  ._rollbarContext._wrappedSource = r.toString(), window._rollbarWrappedError = e), e
-              }
-            }, r._rollbar_wrapped._isWrap = !0, r.hasOwnProperty))
+            o && "function" == typeof o && o.apply(this, arguments);
+            try {
+              return r.apply(this, arguments)
+            } catch (o) {
+              var e = o;
+              throw e && ("string" == typeof e && (e = new String(e)), e._rollbarContext = n() || {}, e
+                ._rollbarContext._wrappedSource = r.toString(), window._rollbarWrappedError = e), e
+            }
+          }, r._rollbar_wrapped._isWrap = !0, r.hasOwnProperty))
             for (var t in r) r.hasOwnProperty(t) && (r._rollbar_wrapped[t] = r[t]);
           return r._rollbar_wrapped
         } catch (e) {
@@ -263,7 +265,7 @@
         }
       };
       for (var p =
-          "log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad"
+        "log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad"
           .split(","), u = 0; u < p.length; ++u) l.prototype[p[u]] = s(p[u]);
       r.exports = {
         setupShim: function (r, e) {
@@ -275,7 +277,7 @@
             return t(function () {
               e.captureUncaught && (a._rollbarOldOnError = r.onerror, n.captureUncaughtExceptions(r, a, !0),
                 n.wrapGlobals(r, a, !0)), e.captureUnhandledRejections && n.captureUnhandledRejections(r,
-                a, !0);
+                  a, !0);
               var t = e.autoInstrument;
               return !1 !== e.enabled && (void 0 === t || !0 === t || "object" == typeof t && t.network) &&
                 r.addEventListener && (r.addEventListener("load", a.captureLoad.bind(a)), r
@@ -313,8 +315,8 @@
               var o = Array.prototype.slice.call(arguments, 0);
               ! function (r, e, o, n) {
                 r._rollbarWrappedError && (n[4] || (n[4] = r._rollbarWrappedError), n[5] || (n[5] = r
-                    ._rollbarWrappedError._rollbarContext), r._rollbarWrappedError = null), e
-                  .handleUncaughtException.apply(e, n), o && o.apply(r, n)
+                  ._rollbarWrappedError._rollbarContext), r._rollbarWrappedError = null), e
+                    .handleUncaughtException.apply(e, n), o && o.apply(r, n)
               }(r, e, n, o)
             };
             o && (t._rollbarOldOnError = n), r.onerror = t
@@ -338,7 +340,7 @@
               }
               try {
                 t = r.detail, !o && t && (o = t.reason, n = t.promise)
-              } catch (r) {}
+              } catch (r) { }
               o || (o = "[unhandledrejection] error getting `reason` from event"), e && e
                 .handleUnhandledRejection && e.handleUnhandledRejection(o, n)
             };
@@ -349,7 +351,7 @@
           if (r) {
             var t, a, l =
               "EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload"
-              .split(",");
+                .split(",");
             for (t = 0; t < l.length; ++t) r[a = l[t]] && r[a].prototype && o(e, r[a].prototype, n)
           }
         }
@@ -359,13 +361,13 @@
         this.impl = r(e, this), this.options = e,
           function (r) {
             for (var e = function (r) {
-                  return function () {
-                    var e = Array.prototype.slice.call(arguments, 0);
-                    if (this.impl[r]) return this.impl[r].apply(this.impl, e)
-                  }
-                }, o =
+              return function () {
+                var e = Array.prototype.slice.call(arguments, 0);
+                if (this.impl[r]) return this.impl[r].apply(this.impl, e)
+              }
+            }, o =
                 "log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad"
-                .split(","), n = 0; n < o.length; n++) r[o[n]] = e(o[n])
+                  .split(","), n = 0; n < o.length; n++) r[o[n]] = e(o[n])
           }(o.prototype)
       }
       o.prototype._swapAndProcessMessages = function (r, e) {
@@ -381,8 +383,8 @@
         return function (e) {
           if (!e && !window._rollbarInitialized) {
             for (var o, n, t = (r = r || {}).globalAlias || "Rollbar", a = window.rollbar, l = function (r) {
-                return new a(r)
-              }, i = 0; o = window._rollbarShims[i++];) n || (n = o.handler), o.handler._swapAndProcessMessages(
+              return new a(r)
+            }, i = 0; o = window._rollbarShims[i++];) n || (n = o.handler), o.handler._swapAndProcessMessages(
               l, o.messages);
             window[t] = n, window._rollbarInitialized = !0
           }

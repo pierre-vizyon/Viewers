@@ -1,7 +1,7 @@
 {
-  "name": "OHIF Viewer",
-  "short_name": "Viewer",
-  "description": "OHIF Viewer",
+  "name": "VIZYON Viewer",
+  "short_name": "Vizyon",
+  "description": "VIZYON Viewer",
   "dir": "auto",
   "lang": "en-US",
   "orientation": "any",
