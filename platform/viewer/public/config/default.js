@@ -8,9 +8,9 @@ window.config = {
     dicomWeb: [
       {
         name: 'Orthanc',
-        wadoUriRoot: 'http://192.168.137.53:8888/pacs/wado',
-        qidoRoot: 'http://192.168.137.53:8888/pacs/dicom-web',
-        wadoRoot: 'http://192.168.137.53:8888/pacs/dicom-web',
+        wadoUriRoot: 'https://pacs.ubi-sante.fr/pacs/wado',
+        qidoRoot: 'https://pacs.ubi-sante.fr/pacs/dicom-web',
+        wadoRoot: 'https://pacs.ubi-sante.fr/pacs/dicom-web',
         qidoSupportsIncludeField: false,
         imageRendering: 'wadors',
         thumbnailRendering: 'wadors',
