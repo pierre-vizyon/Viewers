@@ -524,7 +524,6 @@ async function _fetchStudies(
   console.log('ready for filter')
   console.log(filters)
   console.log(queryFiltersArray)
-  console.log(filter)
 
 
   queryFiltersArray.forEach(filter => {
