@@ -37,7 +37,8 @@ function StudyListRoute(props) {
     studyDateFrom: null,
     PatientName: '',
     PatientID: '',
-    AccessionNumber: '',
+    AccessionNumber: '5601A00004502',
+    //AccessionNumber: '',
     StudyDate: '',
     modalities: '',
     StudyDescription: '',
@@ -346,8 +347,8 @@ async function getStudyList(
   const mappedFilters = {
     PatientID: filters.PatientID,
     PatientName: filters.PatientName,
-    AccessionNumber: '5601A00004502',
-    //AccessionNumber: filters.AccessionNumber,
+    //AccessionNumber: '5601A00004502',
+    AccessionNumber: filters.AccessionNumber,
     StudyDescription: filters.StudyDescription,
     ModalitiesInStudy: filters.modalities,
     // NEVER CHANGE
