@@ -346,7 +346,8 @@ async function getStudyList(
   const mappedFilters = {
     PatientID: filters.PatientID,
     PatientName: filters.PatientName,
-    AccessionNumber: filters.AccessionNumber,
+    AccessionNumber: '5601A00004502',
+    //AccessionNumber: filters.AccessionNumber,
     StudyDescription: filters.StudyDescription,
     ModalitiesInStudy: filters.modalities,
     // NEVER CHANGE
@@ -567,7 +568,7 @@ function _getQueryFiltersForValue(filters, fields, value) {
       {
         PatientID: '',
         PatientName: '',
-        AccessionNumber: '5601A00004502',
+        AccessionNumber: '',
         StudyDescription: '',
         ModalitiesInStudy: '',
       },
