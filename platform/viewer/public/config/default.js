@@ -4,6 +4,7 @@ window.config = {
   extensions: [],
   showStudyList: true,
   filterQueryParam: true,
+  studyListFunctionsEnabled: true,
   servers: {
     dicomWeb: [
       {

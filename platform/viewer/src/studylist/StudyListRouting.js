@@ -22,6 +22,11 @@ function StudyListRouting({ match: routeMatch, location: routeLocation }) {
   const { appConfig = {} } = useContext(AppContext);
 
   const filters = UrlUtil.queryString.getQueryFilters(routeLocation);
+  console.log(filters);
+  console.log(routeLocation);
+
+
+
 
   let studyListFunctionsEnabled = false;
   if (appConfig.studyListFunctionsEnabled) {
