@@ -433,7 +433,7 @@ function _sortStudies(studies, field, order) {
   });
 
   // Sort by field
-  sortedStudies.sort(function(a, b) {
+  sortedStudies.sort(function (a, b) {
     let fieldA = a[field];
     let fieldB = b[field];
     if (field === 'StudyDate') {
@@ -519,6 +519,13 @@ async function _fetchStudies(
   }
 
   const queryPromises = [];
+
+
+  console.log('ready for filter')
+  console.log(filters)
+  console.log(queryFiltersArray)
+  console.log(filter)
+
 
   queryFiltersArray.forEach(filter => {
     const searchStudiesPromise = OHIF.studies.searchStudies(server, filter);
