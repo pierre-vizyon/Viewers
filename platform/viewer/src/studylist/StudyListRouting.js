@@ -32,6 +32,8 @@ function StudyListRouting({ match: routeMatch, location: routeLocation }) {
   if (appConfig.studyListFunctionsEnabled) {
     studyListFunctionsEnabled = appConfig.studyListFunctionsEnabled;
   }
+  console.log(studyListFunctionsEnabled)
+
   return (
     <ConnectedStudyList
       filters={filters}
