@@ -32,6 +32,8 @@ function StudyListRoute(props) {
     fieldName: 'PatientName',
     direction: 'desc',
   });
+  console.log(props);
+
   const [filterValues, setFilterValues] = useState({
     studyDateTo: null,
     studyDateFrom: null,
