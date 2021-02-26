@@ -567,7 +567,7 @@ function _getQueryFiltersForValue(filters, fields, value) {
       {
         PatientID: '',
         PatientName: '',
-        AccessionNumber: '',
+        AccessionNumber: '5601A00004502',
         StudyDescription: '',
         ModalitiesInStudy: '',
       },
