@@ -11,7 +11,7 @@ window.config = {
         wadoUriRoot: 'https://pacs.ubi-sante.fr/pacs/wado',
         qidoRoot: 'https://pacs.ubi-sante.fr/pacs/dicom-web',
         wadoRoot: 'https://pacs.ubi-sante.fr/pacs/dicom-web',
-        qidoSupportsIncludeField: false,
+        qidoSupportsIncludeField: true,
         imageRendering: 'wadors',
         thumbnailRendering: 'wadors',
         enableStudyLazyLoad: true,
