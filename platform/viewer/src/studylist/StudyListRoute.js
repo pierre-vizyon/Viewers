@@ -32,7 +32,10 @@ function StudyListRoute(props) {
     fieldName: 'PatientName',
     direction: 'desc',
   });
-  console.log(props);
+  console.log('ligne 35');
+  console.log(props.filters);
+  console.log('ligne 37');
+
 
   const [filterValues, setFilterValues] = useState({
     studyDateTo: null,
@@ -50,6 +53,13 @@ function StudyListRoute(props) {
     //
     allFields: '',
   });
+
+  console.log('ligne 57');
+  console.log(filterValues);
+  console.log('ligne 59');
+
+
+
   const [studies, setStudies] = useState([]);
   const [searchStatus, setSearchStatus] = useState({
     isSearchingForStudies: false,
