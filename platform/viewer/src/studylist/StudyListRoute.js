@@ -58,6 +58,12 @@ function StudyListRoute(props) {
   console.log(filterValues);
   console.log('ligne 59');
 
+  filterValues = props.filters;
+
+  console.log('ligne 63');
+  console.log(filterValues);
+  console.log('ligne 65');
+
 
 
   const [studies, setStudies] = useState([]);
