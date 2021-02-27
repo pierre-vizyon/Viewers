@@ -42,8 +42,8 @@ function StudyListRoute(props) {
   const [filterValues, setFilterValues] = useState({
     studyDateTo: null,
     studyDateFrom: null,
-    PatientName: '',
-    PatientID: '',
+    PatientName: props.filters.patientName,
+    PatientID: props.filters.patientID,
     AccessionNumber: props.filters.accessionNumber,
     //AccessionNumber: '',
     StudyDate: '',
