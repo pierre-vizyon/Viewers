@@ -37,34 +37,30 @@ function StudyListRoute(props) {
   console.log('ligne 37');
 
 
-  const [filterValues, setFilterValues] = useState({
-    studyDateTo: null,
-    studyDateFrom: null,
-    PatientName: '',
-    PatientID: '',
-    AccessionNumber: '5601A00004502',
-    //AccessionNumber: '',
-    StudyDate: '',
-    modalities: '',
-    StudyDescription: '',
-    //
-    patientNameOrId: '',
-    accessionOrModalityOrDescription: '',
-    //
-    allFields: '',
-  });
+  const [filterValues, setFilterValues] = useState(props.filters);
+
+  // const [filterValues, setFilterValues] = useState({
+  //   studyDateTo: null,
+  //   studyDateFrom: null,
+  //   PatientName: '',
+  //   PatientID: '',
+  //   AccessionNumber: '5601A00004502',
+  //   //AccessionNumber: '',
+  //   StudyDate: '',
+  //   modalities: '',
+  //   StudyDescription: '',
+  //   //
+  //   patientNameOrId: '',
+  //   accessionOrModalityOrDescription: '',
+  //   //
+  //   allFields: '',
+  // });
 
   console.log('ligne 57');
   console.log(filterValues);
   console.log('ligne 59');
 
-  const [filterValues, setFilterValues] = props.filters;
-
-  console.log('ligne 63');
-  console.log(filterValues);
-  console.log('ligne 65');
-
-
+  //const [filterValues, setFilterValues] = props.filters;
 
   const [studies, setStudies] = useState([]);
   const [searchStatus, setSearchStatus] = useState({
