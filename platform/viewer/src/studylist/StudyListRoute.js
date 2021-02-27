@@ -35,8 +35,8 @@ function StudyListRoute(props) {
 
   // on récupère l'URL contextuelle;
 
-  if (props.filters.accessionNumber === undefined) {
-    alert("AN undefined");
+  if (props.filters === undefined) {
+    alert("filters undefined");
   }
 
 
