@@ -68,7 +68,9 @@ function StudyListRoute(props) {
     setFilterValues(state => {
       return {
         ...state,
-        [toLowerCaseFirstLetter(key)]: value,
+        //        [toLowerCaseFirstLetter(key)]: value,
+        [key]: value,
+
       };
     });
 
