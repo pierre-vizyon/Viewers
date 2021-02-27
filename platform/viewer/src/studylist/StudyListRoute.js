@@ -35,11 +35,18 @@ function StudyListRoute(props) {
 
   // on récupère l'URL contextuelle;
 
+  if (props.filters.accessionNumber === undefined) {
+    alert("AN undefined");
+  }
+
+
+
+
   const [filterValues, setFilterValues] = useState({
     studyDateTo: null,
     studyDateFrom: null,
-    PatientName: props.filters.patientName,
-    PatientID: props.filters.patientID,
+    PatientName: '',
+    PatientID: '',
     AccessionNumber: props.filters.accessionNumber,
     StudyDate: '',
     modalities: '',
