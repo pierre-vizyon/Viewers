@@ -32,12 +32,8 @@ function StudyListRoute(props) {
     fieldName: 'PatientName',
     direction: 'desc',
   });
-  console.log('ligne 35');
-  console.log(props.filters);
-  console.log('ligne 37');
 
-
-  //const [filterValues, setFilterValues] = useState(props.filters);
+  // on récupère l'URL contextuelle;
 
   const [filterValues, setFilterValues] = useState({
     studyDateTo: null,
@@ -45,7 +41,6 @@ function StudyListRoute(props) {
     PatientName: props.filters.patientName,
     PatientID: props.filters.patientID,
     AccessionNumber: props.filters.accessionNumber,
-    //AccessionNumber: '',
     StudyDate: '',
     modalities: '',
     StudyDescription: '',
@@ -55,36 +50,6 @@ function StudyListRoute(props) {
     //
     allFields: '',
   });
-
-  console.log('ligne 57');
-  console.log(filterValues);
-  console.log('ligne 59');
-
-  //props.filters
-
-
-  // Object.entries(props.filters).forEach(([key, value]) => {
-  //   //filters[toLowerCaseFirstLetter(key)] = value;
-  //   setFilterValues(state => {
-  //     return {
-  //       ...state,
-  //       //        [toLowerCaseFirstLetter(key)]: value,
-  //       [key]: value,
-
-  //     };
-  //   });
-
-  // });
-
-
-
-  //const [filterValues, setFilterValues] = props.filters;
-
-
-
-  console.log('ligne 67');
-  console.log(filterValues);
-  console.log('ligne 69');
 
 
   const [studies, setStudies] = useState([]);
