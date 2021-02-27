@@ -44,7 +44,7 @@ function StudyListRoute(props) {
     studyDateFrom: null,
     PatientName: '',
     PatientID: '',
-    AccessionNumber: '5601A00004502',
+    AccessionNumber: props.filters.accessionNumber,
     //AccessionNumber: '',
     StudyDate: '',
     modalities: '',
@@ -63,18 +63,18 @@ function StudyListRoute(props) {
   //props.filters
 
 
-  Object.entries(props.filters).forEach(([key, value]) => {
-    //filters[toLowerCaseFirstLetter(key)] = value;
-    setFilterValues(state => {
-      return {
-        ...state,
-        //        [toLowerCaseFirstLetter(key)]: value,
-        [key]: value,
+  // Object.entries(props.filters).forEach(([key, value]) => {
+  //   //filters[toLowerCaseFirstLetter(key)] = value;
+  //   setFilterValues(state => {
+  //     return {
+  //       ...state,
+  //       //        [toLowerCaseFirstLetter(key)]: value,
+  //       [key]: value,
 
-      };
-    });
+  //     };
+  //   });
 
-  });
+  // });
 
 
 
